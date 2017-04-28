@@ -1,0 +1,22 @@
+<template name="App_home">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Web Memo</a>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+                <div class="form-group">
+                    <textarea id="text" class="form-control" rows="10">{{memo.text}}</textarea>
+                    <button id="to_edit" class="btn btn-primary">編集する</button>
+                    <button id="to_share" class="btn btn-primary">URLをコピーする</button>
+                    <div>
+                        URL : /{{memo.param}}
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+</template>
